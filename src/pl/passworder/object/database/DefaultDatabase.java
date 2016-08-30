@@ -27,6 +27,8 @@
      */
 
     import com.google.gson.Gson;
+    import com.google.gson.JsonArray;
+    import com.google.gson.JsonElement;
     import com.google.gson.JsonObject;
     import pl.passworder.syntax.database.Database;
     import pl.passworder.syntax.database.DatabaseDecoder;
@@ -70,11 +72,6 @@
 
         @Override
         public void writeObject(String var0, Object var1) {
-//
-//            String[] obj0 = var0.split("\\.");
-//            for(int i=0; i < obj0.length; i++) {
-//                System.out.println(obj0[i]);
-//            }
 
         }
 
@@ -85,16 +82,25 @@
 
         @Override
         public boolean checkObject(String var0) {
-//            String[] obj0 = var0.split("\\.");
-//            boolean obj1 = false;
-//            for(int i=0; i<obj0.length; i++) {
-//                if(object.has(obj0[i])) {
-//                    obj1 = true;
-//                }
-//
-//
-//            }
-            return false;
+
+            String[] obj0 = var0.split("\\.");
+            JsonElement obj1 = object;
+
+            //
+
+            for (String obj2 : obj0) {
+                if (obj1 != null) {
+                    if (((JsonObject) obj1).has(obj2)) {
+                        obj1 = ((JsonObject) obj1).getAsJsonObject(obj2);
+                    }
+                } else {
+                    obj1 = null;
+                }
+
+
+            }
+
+            return obj1 != null;
         }
 
         @Override
