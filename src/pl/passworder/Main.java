@@ -26,23 +26,9 @@
      *     pl.passworder
      */
 
-    import com.google.gson.JsonObject;
-    import pl.passworder.object.database.DefaultDatabase;
-    import pl.passworder.syntax.database.Database;
-
     public class Main {
 
         public static void main(String[] var0) {
 
-
-            int t = 1;
-            System.out.println(t);
-
-            Database database = new DefaultDatabase(null, null, null, null, null, null);
-            database.writeObject("tak.było.nie.zmyślam", null);
-
-
-            JsonObject object = new JsonObject();
-            object.getAsJsonObject("było");
         }
     }
