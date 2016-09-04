@@ -28,4 +28,8 @@
 
     public class Category {
 
+        private transient long id;
+        private String name;
+        private String description;
+
     }

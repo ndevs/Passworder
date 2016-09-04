@@ -26,6 +26,12 @@
      *     pl.passworder.factory.configuration
      */
 
+    import pl.passworder.syntax.configuration.Configuration;
+
     public class ConfigurationFactory {
+
+        public static Configuration createJsonConfiguration(String var0) {
+            return null;
+        }
 
     }

@@ -26,6 +26,15 @@
      *     pl.passworder.module.password
      */
 
+    import java.util.Map;
+
     public class Password {
+
+        private transient long id;
+        private String name;
+        private long created;
+        private long modified;
+        private String description;
+        private Map<String, Object> fields;
 
     }

@@ -53,7 +53,7 @@
 
     //TODO: Kopiowanie haseł za pomocą skrótów klawiszowych, odpala sie okienko z lista wszystkich haseł, klikniecie na hasło spowoduje skopiowanie i zamknięcie okna
     //TODO: Kopiowanie haseł w szybki sposób, np. z danej grupy, skrót klawiszowy + liczba od 0 do 9
-
+    //TODO: Dopisać datę stworzenia i modyfikacji w kategoriach
 
     //
 
